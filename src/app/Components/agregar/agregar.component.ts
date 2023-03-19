@@ -22,7 +22,6 @@ export class AgregarComponent implements OnInit {
     this.nombreService.saveNombre(this.nombreNuevo).subscribe(
       res=>{
         console.log(res);
-        this.router.navigate(['/inicio']);
       },
       err=>console.log(err)
     );
